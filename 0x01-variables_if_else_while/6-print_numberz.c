@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
  *main - entry piont
- *Description: dusplay alphabetic in lowercase
+ *Description: print all single number of base 10 start from 0
+ *using putchar function
  *Return: 0
  */
 int main(void)
