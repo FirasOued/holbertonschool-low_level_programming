@@ -1,17 +1,19 @@
-#include <stdio.h>
+#include "holberton.h"
 /**
 *main - entry piont
-*Description: program that prints Holberton followed by new line
+*Description: print Holberton folowed by newline
 *Return: 0
 */
 int main(void)
 {
-printf("Holberton\n");
+char *word = "Holberton";
+int i;
+
+for (i = 0; i < 9; i++)
+{
+	_putchar(word[i]);
+
+}
+_putchar('\n');
 return (0);
-
-
-
-
-
-
 }
