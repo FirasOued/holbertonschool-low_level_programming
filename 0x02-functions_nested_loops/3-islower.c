@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
-*_lower - function to check for lowercase character
+*_islower - function to check for lowercase character
 *@c: the character to be checked
 *Return: 1 if c is lowercase, otherwise 0
 */
