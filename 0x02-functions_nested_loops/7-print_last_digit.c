@@ -23,6 +23,7 @@ int print_last_digit(int n)
 		_putchar(p + '0');
 		return (p);
 	}
+	_putchar('\n');
 
 }
 
