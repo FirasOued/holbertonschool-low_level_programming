@@ -2,29 +2,29 @@
 
 /**
 *main - main block
-*Description: Print the sum of even Fibonacci numbers
+*Description: Print the sum of even Fibonacci numbers, not exceeding 4000000
 *Return: 0
 */
 
 int main(void)
+
 {
-	unsigned long n, p, xfib, sum, i;
 
-	n = 1;
-	p = 2;
-	sum = 0;
+	int n = 1, p = 2, sum = 0;
+	int k;
 
-	for (i = 0 ; i < 50 ; i++)
+
+	while (p < 4000000)
 	{
-		xfib = n + p;
-		n = p;
-		p = xfib;
 
-		if (xfib % 2 == 0 && xfib < 4000000)
-		{
-			sum += xfib;
-		}
+		if (p % 2 == 0)
+			sum += p;
+
+		k = p;
+		p += n;
+		n = k;
+
 	}
-	printf("%lu\n", sum);
+	printf("%d\n", sum);
 	return (0);
 }
