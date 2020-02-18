@@ -2,9 +2,9 @@
 
 /**
 *_puts - function that prints a string, followed by a new line, to stdout
-*str: strinstring tstring to print
-
+*@str: string to print
 */
+
 void _puts(char *str)
 {
 	while (*str)
