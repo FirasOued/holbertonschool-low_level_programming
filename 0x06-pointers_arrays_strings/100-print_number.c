@@ -37,5 +37,5 @@ void print_number(int n)
 		_putchar((k2 / achar) % 10 + '0');
 		achar /= 10;
 	}
-	_putchar(k1 % 10 + '0');
+	_putchar(k2 % 10 + '0');
 }
