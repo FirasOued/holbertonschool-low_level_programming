@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
-*print_number - function that prints an integer
+*print_number - function that prints an integerr
 *@n: Input number
 */
 
