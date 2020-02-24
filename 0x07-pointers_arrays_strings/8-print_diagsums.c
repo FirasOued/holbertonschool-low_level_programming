@@ -4,7 +4,7 @@
 /**
 *print_diagsums - Print the sum of the 2 diagonals of a square matrix of int
 *@a: 2d array int
-*@size: size of array 
+*@size: size of array
 */
 
 
