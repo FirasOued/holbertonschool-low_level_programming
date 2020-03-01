@@ -14,9 +14,9 @@ int main(int argc, char *argv[])
 
 	radd = 0;
 	
-	if (argc >= 3)
+	if (argc >= 2)
 	{
-		for ( i = 1 ; i < argc ; i++)
+		for (i = 1 ; i < argc ; i++)
 		{
 			if (atoi(argv[i]) > 0)
 			{
@@ -28,9 +28,10 @@ int main(int argc, char *argv[])
 				return (1);
 			}
 		}
-		printf("%d\n", radd);
 	}
-	else if (argc == 1)
+	printf("%d\n", radd);
+
+	if (argc == 1)
 		printf("0\n");
 
 	return (0);
