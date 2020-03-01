@@ -13,25 +13,29 @@ int main(int argc, char *argv[])
 	int i, radd;
 
 	radd = 0;
-
 	if (argc >= 3)
 	{
-		for (i = 1 ; i < argc ; i++)
+		i = 1;
+		while (i < argc)
 		{
 			if (atoi(argv[i]) > 0)
 			{
 				radd += atoi(argv[i]);
+				i++;
 			}
-			else
+		}
+		printf("%d\n", radd);
+
+		for (i = 1 ; i < argc ; i++)
+		{
+			if (!(atoi(argv[i]) > 0))
 			{
 				printf("Error\n");
-				return (1);
+				break;
 			}
 		}
 	}
-	printf("%d\n", radd);
-
-	if (argc == 1)
+	else if (argc == 1)
 		printf("0\n");
 
 	return (0);
