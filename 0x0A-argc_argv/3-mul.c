@@ -1,27 +1,32 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
 /**
-*main - progrman that multiplies two numbers
-*@argc: argument count
-*@argv: pointer point to argument string
-*Return: 0
-*/
+ * main - a function that multiplies two number
+ *@argc: a argument counter
+ *@argv: a pointer point to argument string
+ *
+ * Return: return 0 on success, -1 if failure
+ */
+
 
 int main(int argc, char *argv[])
 {
-	int num1, num2, res;
+	int num1, num2;
+
+
+	num1 = num2 = 0;
 
 	if (argc == 3)
 	{
 		num1 = atoi(argv[1]);
 		num2 = atoi(argv[2]);
-		res = num1 * num2;
-		printf("%d\n", res);
+		printf("%d\n", num1 * num2);
+		return (0);
 	}
 	else
-	{
 		printf("Error\n");
-	}
+
 	return (1);
 }
