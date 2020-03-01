@@ -10,33 +10,27 @@
 
 int main(int argc, char *argv[])
 {
-	int i, radd;
+	int rest, i;
+	char *p;
+	int n;
 
-	radd = 0;
-	if (argc >= 3)
+	rest = 0;
+
+	if (argc > 1)
 	{
-		i = 1;
-		while (i < argc)
+		for (i = 1; argv[i]; i++)
 		{
-			if (atoi(argv[i]) > 0)
-			{
-				radd += atoi(argv[i]);
-				i++;
-			}
-		}
-		printf("%d\n", radd);
+			n = strtol(argv[i], &p, 10);
 
-		for (i = 1 ; i < argc ; i++)
-		{
-			if (!(atoi(argv[i]) >= 0))
+			if (!*p)
+				rest += n;
+			else
 			{
 				printf("Error\n");
-				break;
+				return (1);
 			}
 		}
 	}
-	else if (argc == 1)
-		printf("0\n");
-
+	printf("%d\n", rest);
 	return (0);
 }
