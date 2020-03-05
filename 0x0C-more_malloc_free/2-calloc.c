@@ -2,27 +2,30 @@
 #include "holberton.h"
 
 /**
-*_calloc - function that allocates memory for array
-*@nmemb: number of element inside the array
-*@size: bytes of each element
-*Return: pointer point to array otherwise NULL ( on fail)
+*_calloc - functuon thar concatenate two strings
+*@nmemb: number of elements
+*@size: type of elements
+*Return: pointer
 */
 
 void *_calloc(unsigned int nmemb, unsigned int size)
+
 {
+
+	void *p = NULL;
 	unsigned int i;
-	char *p;
+
+
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
-	p = malloc(size * nmemb);
-
+	p = malloc(nmemb * size);
 	if (p == NULL)
 		return (NULL);
 
-	for (i = 0; i < nmemb; i++)
-		p[i] = 0;
+	for (i = 0; i < (nmemb * size); i++)
+		*((char *)(p) + i) = 0;
 
 	return (p);
 }
