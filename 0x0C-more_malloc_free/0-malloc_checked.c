@@ -2,7 +2,7 @@
 
 /**
 *malloc_checked - function that allocates memory with malloc
-*@b: unsigned int 
+*@b: unsigned int
 */
 
 
