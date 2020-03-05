@@ -4,8 +4,8 @@
 
 /**
 *string_nconcat -function that concatenates two strings
-*@s1: pointer point to  first string 
-*@s2: pointer point to secode string 
+*@s1: pointer point to  first string
+*@s2: pointer point to secode string
 *@n: size of string to add into newstring
 *Return: pointer , NULL if fail
 */
@@ -34,12 +34,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		return (NULL);
 	}
 
-	for (j = 0; s1[j] != '\0'; i++)
+	for (j = 0; s1[j] != '\0'; j++)
 		p[j] = s1[j];
 
 	for (i = 0; j < siz; j++, i++)
 		p[j] = s2[i];
-	p[i] = '\0';
+	p[j] = '\0';
 
 	return (p);
 }
