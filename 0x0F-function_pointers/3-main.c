@@ -14,5 +14,8 @@
 int main(int argc, char **argv)
 
 {
+	if (argc != 3 && argv)
+		return (0);
+		/* bbaa333333"*/
 	return (0);
 }
