@@ -2,13 +2,13 @@
 #include <stdio.h>
 
 /**
-*print_name - prints a name
-*@name: input string
-*@f: function pointer casted to char pointer
+*print_name - function that prints a name
+*@name: string
+*@f: function pointer 
 */
 
 void print_name(char *name, void (*f)(char *))
 {
-	if (name != NULL)
+	if (name != NULL && f)
 		f(name);
 }
